@@ -1,0 +1,11 @@
+To capture I'll use tshark and wireshark to filter:
+tshark -i enp5s0 -a duration:secondsToCapture -w outputName.pcapng
+
+This is for non-tor traffic:
+((ip.src == externIp and ip.dst == externIp) and (gsm_ipa or tcp.dstport == 5000)
+
+This is to remove ssh traffic:
+!(tcp.port == 55782 and tcp.port == 22 and ip.addr == externIp)
+
+Tor traffic (setup and send/reciving):
+(ip.src == 127.0.0.1 and ip.dst == 127.0.0.1 and ((tcp.port == 9051 or tcp.srcport == 9050) or (gsm_ipa and tcp.port == 5000)))
