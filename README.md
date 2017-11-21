@@ -44,4 +44,4 @@ Just because it uses tor doesn't garanti it's totaly anonymous, it also depends 
 You may use the code as you see fit but this is done your own risk. Nothing is supported and no garanti is given.
 
 ## Author
-Only one author: mejan (mifa1100@student.miun.se 4 school || najemes0@gmail.com 4 private).
+Only one author: mejan mifa1100@student.miun.se.
